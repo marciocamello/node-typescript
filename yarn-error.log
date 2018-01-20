@@ -1,0 +1,66 @@
+Arguments: 
+  /usr/bin/node /usr/share/yarn/bin/yarn.js
+
+PATH: 
+  /home/camello/bin:/home/camello/.local/bin:/home/camello/bin:/home/camello/.local/bin:~/.composer/vendor/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/ProgramData/Oracle/Java/javapath_target_16453359:/mnt/c/Program Files (x86)/Python36-32/Scripts:/mnt/c/Program Files (x86)/Python36-32:/mnt/c/Ruby23-x64/bin:/mnt/c/Windows/System32:/mnt/c/Windows:/mnt/c/Windows/System32/wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0:/mnt/c/Program Files (x86)/Bitvise SSH Client:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/d/dev/Anaconda2:/mnt/d/dev/Anaconda2/Scripts:/mnt/d/dev/Anaconda2/Library/bin:/mnt/c/Windows/System32:/mnt/c/Windows:/mnt/c/Windows/System32/wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0:/mnt/c/Program Files (x86)/Skype/Phone:/mnt/c/Program Files/Microsoft SQL Server/130/Tools/Binn:/mnt/c/Program Files/Java/jdk1.8.0_144/bin:/mnt/d/nodejs:/mnt/c/Program Files/Common Files/Autodesk Shared:/mnt/c/Program Files (x86)/Autodesk/Backburner:/mnt/c/Program Files/dotnet:/mnt/c/Program Files (x86)/Yarn/bin:/mnt/c/Program Files/Git/cmd:/mnt/c/Users/banda/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/banda/AppData/Roaming/npm:/mnt/c/Program Files/Microsoft VS Code/bin:/mnt/c/Users/banda/AppData/Local/Yarn/bin:/snap/bin:/mnt/c/Program\ Files/Docker/Docker/resources/bin
+
+Yarn version: 
+  1.3.2
+
+Node version: 
+  8.9.4
+
+Platform: 
+  linux x64
+
+npm manifest: 
+  {
+    "name": "node-typescript",
+    "version": "1.0.0",
+    "main": "index.js",
+    "author": "marciocamello@outlook.com",
+    "license": "MIT",
+    "private": true,
+    "scripts": {
+      "build": "tsc",
+      "dev": "tsc --watch & nodemon dist",
+      "test": "tsc && mocha dist/**/*.spec.js",
+      "lint": "eslint src --ext ts",
+      "tsc": "tsc"
+    },
+    "keywords": [],
+    "dependencies": {
+      "@types/node": "7.0.22",
+      "express": "4.15.3",
+      "nodemon": "1.11.0"
+    },
+    "devDependencies": {
+      "@types/mocha": "2.2.41",
+      "@types/node": "7.0.22",
+      "eslint": "4.0.0",
+      "eslint-config-airbnb-base": "11.2.0",
+      "eslint-plugin-import": "2.3.0",
+      "eslint-plugin-promise": "3.5.0",
+      "mocha": "3.4.2",
+      "supertest": "3.0.0",
+      "tsc": "1.20150623.0",
+      "typescript": "2.3.3",
+      "typescript-eslint-parser": "3.0.0"
+    }
+  }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
+
+Trace: 
+  SyntaxError: /mnt/i/developer/www/jobs/nodejs/node-typescript/package.json: Unexpected token } in JSON at position 826
+      at JSON.parse (<anonymous>)
+      at /usr/share/yarn/lib/cli.js:770:59
+      at Generator.next (<anonymous>)
+      at step (/usr/share/yarn/lib/cli.js:92:30)
+      at /usr/share/yarn/lib/cli.js:103:13
+      at <anonymous>
