@@ -8,4 +8,4 @@ describe('App', () => {
             .expect('Content-Type', /json/)
             .expect(200)
     )
-})
+});
